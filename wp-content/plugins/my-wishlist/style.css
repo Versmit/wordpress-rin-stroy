@@ -1,0 +1,95 @@
+/* Стили для кнопки "Добавить в список желаний" */
+.mywl-add-to-wishlist {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 50px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.mywl-add-to-wishlist:hover {
+    background-color: #e91e63;
+}
+
+/* Стили для кнопки "Удалить из списка желаний" */
+.mywl-remove-from-wishlist {
+    background-color: transparent;
+    color: #f44336;
+    border: 2px solid #f44336;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.mywl-remove-from-wishlist:hover {
+    background-color: #f44336;
+    color: #fff;
+}
+
+/* Стили для списка товаров в списке желаний */
+.mywl-wishlist-container .mywl-wishlist-products {
+    list-style: none;
+    padding: 0;
+}
+
+.mywl-wishlist-container .mywl-wishlist-products li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background: #fefefe;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.mywl-wishlist-container .mywl-product-image img {
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+.mywl-wishlist-container .mywl-product-info {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.mywl-wishlist-container .mywl-product-info a {
+    font-size: 22px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mywl-wishlist-container .mywl-product-info a:hover {
+    color: #ff4081;
+}
+
+.mywl-wishlist-container .mywl-product-price {
+    font-size: 20px;
+    color: #ff4081;
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    .mywl-wishlist-container .mywl-wishlist-products li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mywl-wishlist-container .mywl-product-image {
+        margin-bottom: 15px;
+    }
+
+    .mywl-wishlist-container .mywl-product-info {
+        margin-left: 0;
+    }
+}

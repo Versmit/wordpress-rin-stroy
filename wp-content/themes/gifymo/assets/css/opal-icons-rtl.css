@@ -1,0 +1,475 @@
+@font-face {
+  font-family: opal-icon;
+  src: url(../fonts/opal-icon.eot);
+  src: url(../fonts/opal-icon.eot?#iefix) format("eot"), url(../fonts/opal-icon.woff2) format("woff2"), url(../fonts/opal-icon.woff) format("woff"), url(../fonts/opal-icon.ttf) format("truetype"),
+    url(../fonts/opal-icon.svg#opal-icon) format("svg");
+}
+
+.elementor-element .elementor-widget-wp-widget-recent-posts .post-date:before,
+.elementor-menu-toggle i:before,
+.elementor-nav-menu .sub-arrow,
+.elementor-widget-opal-image-hotspots .elementor-accordion .elementor-tab-title:before,
+.filter-toggle .filter-icon,
+.handheld-footer-bar .cart .footer-cart-contents:before,
+.handheld-footer-bar .my-account .my-accrount-footer:before,
+.handheld-footer-bar .search .search-footer:before,
+.instagram-widget .wrapp-picture:before,
+.list-check li:before,
+.opal-icon,
+.owl-theme .owl-nav [class*="owl-"]:before,
+.shop-action .compare:before,
+.shop-action .woosc-btn:before,
+.shop-action .woosq-btn:before,
+.shop-action .woosw-btn:before,
+.shop-action .yith-wcqv-button:before,
+.shop-action .yith-wcwl-add-to-wishlist > div > a:before,
+.shop-action a[class*="product_type_"]:before,
+.single-product div.type-product .entry-summary .compare:before,
+.single-product div.type-product .entry-summary .woosc-btn:before,
+.single-product div.type-product .entry-summary .woosw-btn:before,
+.single-product div.type-product .entry-summary .yith-wcwl-add-to-wishlist > div > a:before,
+.sticky .entry-title:before,
+.title-with-icon:before,
+.wishlist-empty:before,
+.woocommerce-cart .cart-empty:before,
+[class*="opal-icon-"]:before {
+  font-family: opal-icon;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.opal-icon-brand-1:before {
+  content: "";
+}
+
+.opal-icon-brand-2:before {
+  content: "";
+}
+
+.opal-icon-brand-3:before {
+  content: "";
+}
+
+.opal-icon-brand-4:before {
+  content: "";
+}
+
+.opal-icon-brand-5:before {
+  content: "";
+}
+
+.opal-icon-gifts:before {
+  content: "";
+}
+
+.opal-icon-occasions:before {
+  content: "";
+}
+
+.opal-icon-services:before {
+  content: "";
+}
+
+.opal-icon-shipping:before {
+  content: "";
+}
+
+.opal-icon-support:before {
+  content: "";
+}
+
+.opal-icon-angle-double-down:before {
+  content: "";
+}
+
+.opal-icon-angle-double-left:before {
+  content: "";
+}
+
+.opal-icon-angle-double-right:before {
+  content: "";
+}
+
+.opal-icon-angle-double-up:before {
+  content: "";
+}
+
+.opal-icon-angle-down:before {
+  content: "";
+}
+
+.opal-icon-angle-left:before {
+  content: "";
+}
+
+.opal-icon-angle-right:before {
+  content: "";
+}
+
+.opal-icon-angle-up:before {
+  content: "";
+}
+
+.opal-icon-arrow-circle-left:before {
+  content: "";
+}
+
+.opal-icon-arrow-circle-right:before {
+  content: "";
+}
+
+.opal-icon-arrow-down:before {
+  content: "";
+}
+
+.opal-icon-arrow-left:before,
+.owl-theme.owl-rtl .owl-nav .owl-next[class*="owl-"]:before,
+.owl-theme .owl-rtl .owl-nav .owl-next[class*="owl-"]:before {
+  content: "";
+}
+
+.opal-icon-arrow-right:before,
+.owl-theme.owl-rtl .owl-nav .owl-prev[class*="owl-"]:before,
+.owl-theme .owl-rtl .owl-nav .owl-prev[class*="owl-"]:before {
+  content: "";
+}
+
+.opal-icon-arrow-up:before {
+  content: "";
+}
+
+.opal-icon-blockquote:before {
+  content: "";
+}
+
+.opal-icon-blockquote2:before {
+  content: "";
+}
+
+.opal-icon-bookmark:before {
+  content: "";
+}
+
+.opal-icon-calendar-alt:before {
+  content: "";
+}
+
+.opal-icon-calendar:before {
+  content: "";
+}
+
+.opal-icon-caret-down:before {
+  content: "";
+}
+
+.opal-icon-caret-left:before {
+  content: "";
+}
+
+.opal-icon-caret-right:before {
+  content: "";
+}
+
+.opal-icon-caret-up:before {
+  content: "";
+}
+
+.opal-icon-chevron-down:before {
+  content: "";
+}
+
+.opal-icon-chevron-left:before {
+  content: "";
+}
+
+.opal-icon-chevron-right:before {
+  content: "";
+}
+
+.opal-icon-chevron-up:before {
+  content: "";
+}
+
+.opal-icon-down:before {
+  content: "";
+}
+
+.opal-icon-exclamation-circle:before {
+  content: "";
+}
+
+.opal-icon-instagram:before {
+  content: "";
+}
+
+.opal-icon-left:before {
+  content: "";
+}
+
+.opal-icon-long-arrow-alt-down:before {
+  content: "";
+}
+
+.opal-icon-long-arrow-alt-left:before {
+  content: "";
+}
+
+.opal-icon-long-arrow-alt-right:before {
+  content: "";
+}
+
+.opal-icon-long-arrow-alt-up:before {
+  content: "";
+}
+
+.opal-icon-long-arrow-down:before {
+  content: "";
+}
+
+.opal-icon-long-arrow-left:before,
+.owl-theme .owl-nav .owl-prev[class*="owl-"]:before {
+  content: "";
+}
+
+.opal-icon-long-arrow-right:before,
+.owl-theme .owl-nav .owl-next[class*="owl-"]:before {
+  content: "";
+}
+
+.opal-icon-long-arrow-up:before {
+  content: "";
+}
+
+.elementor-menu-toggle i:before,
+.opal-icon-menu:before {
+  content: "";
+}
+
+.opal-icon-quote:before {
+  content: "";
+}
+
+.opal-icon-right:before {
+  content: "";
+}
+
+.handheld-footer-bar .search .search-footer:before,
+.opal-icon-search:before {
+  content: "";
+}
+
+.opal-icon-share-all:before {
+  content: "";
+}
+
+.opal-icon-th-grid:before {
+  content: "";
+}
+
+.opal-icon-th-list:before {
+  content: "";
+}
+
+.opal-icon-thumbtack:before {
+  content: "";
+}
+
+.filter-toggle.active .filter-icon:before,
+.opal-icon-times:before {
+  content: "";
+}
+
+.handheld-footer-bar .my-account .my-accrount-footer:before,
+.opal-icon-user:before {
+  content: "";
+}
+
+.opal-icon-video:before {
+  content: "";
+}
+
+.opal-icon-addtocart:before,
+.shop-action a[class*="product_type_"]:before {
+  content: "";
+}
+
+.opal-icon-cart-empty:before,
+.woocommerce-cart .cart-empty:before {
+  content: "";
+}
+
+.handheld-footer-bar .cart .footer-cart-contents:before,
+.opal-icon-cart:before {
+  content: "";
+}
+
+.opal-icon-check-circle:before {
+  content: "";
+}
+
+.opal-icon-check:before {
+  content: "";
+}
+
+.opal-icon-cloud-download:before {
+  content: "";
+}
+
+.opal-icon-compare:before,
+.shop-action .compare:before,
+.shop-action .woosc-btn:before,
+.single-product div.type-product .entry-summary .compare:before,
+.single-product div.type-product .entry-summary .woosc-btn:before {
+  content: "";
+}
+
+.opal-icon-credit-card:before {
+  content: "";
+}
+
+.opal-icon-download:before {
+  content: "";
+}
+
+.opal-icon-eye:before {
+  content: "";
+}
+
+.opal-icon-file-alt:before {
+  content: "";
+}
+
+.filter-toggle .filter-icon:before,
+.opal-icon-filter:before {
+  content: "";
+}
+
+.opal-icon-frown:before {
+  content: "";
+}
+
+.opal-icon-gift:before {
+  content: "";
+}
+
+.opal-icon-heart:before {
+  content: "";
+}
+
+.opal-icon-home-lg:before {
+  content: "";
+}
+
+.opal-icon-home:before {
+  content: "";
+}
+
+.opal-icon-info-circle:before {
+  content: "";
+}
+
+.opal-icon-level-up:before {
+  content: "";
+}
+
+.opal-icon-meh:before {
+  content: "";
+}
+
+.opal-icon-no-favorites:before,
+.wishlist-empty:before {
+  content: "";
+}
+
+.opal-icon-pen-square:before {
+  content: "";
+}
+
+.opal-icon-pencil:before {
+  content: "";
+}
+
+.opal-icon-quickview:before,
+.shop-action .woosq-btn:before,
+.shop-action .yith-wcqv-button:before {
+  content: "";
+}
+
+.opal-icon-rating:before {
+  content: "";
+}
+
+.opal-icon-reply:before {
+  content: "";
+}
+
+.opal-icon-search-plus:before {
+  content: "";
+}
+
+.opal-icon-shopping-bag:before {
+  content: "";
+}
+
+.opal-icon-shopping-basket:before {
+  content: "";
+}
+
+.opal-icon-sign-in:before {
+  content: "";
+}
+
+.opal-icon-sign-out:before {
+  content: "";
+}
+
+.opal-icon-smile:before {
+  content: "";
+}
+
+.opal-icon-spinner:before {
+  content: "";
+}
+
+.opal-icon-star:before {
+  content: "";
+}
+
+.opal-icon-sync:before {
+  content: "";
+}
+
+.opal-icon-tachometer-alt-fastest:before {
+  content: "";
+}
+
+.opal-icon-times-circle:before {
+  content: "";
+}
+
+.opal-icon-truck:before {
+  content: "";
+}
+
+.opal-icon-wishlist-fill:before,
+.shop-action .woosw-added:before,
+.shop-action .woosw-btn.woosw-added:before,
+.shop-action .yith-wcwl-add-to-wishlist > div.yith-wcwl-wishlistaddedbrowse > a:before,
+.shop-action .yith-wcwl-add-to-wishlist > div.yith-wcwl-wishlistexistsbrowse > a:before,
+.single-product div.type-product .entry-summary .yith-wcwl-add-to-wishlist > div.yith-wcwl-wishlistaddedbrowse > a:before,
+.single-product div.type-product .entry-summary .yith-wcwl-add-to-wishlist > div.yith-wcwl-wishlistexistsbrowse > a:before {
+  content: "";
+}
+
+.opal-icon-wishlist:before,
+.shop-action .woosw-btn:before,
+.shop-action .yith-wcwl-add-to-wishlist > div > a:before,
+.single-product div.type-product .entry-summary .woosw-btn:before,
+.single-product div.type-product .entry-summary .yith-wcwl-add-to-wishlist > div > a:before {
+  content: "";
+}

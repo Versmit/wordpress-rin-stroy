@@ -1,0 +1,10 @@
+2025-05-09T21:04:56+00:00 CRITICAL syntax error, unexpected '<', expecting end of file в /home/r/rinstroy/rin-stroy.ru/public_html/wp-content/themes/gifymo/functions.php на строке 1238
+
+2025-05-09T21:05:14+00:00 CRITICAL syntax error, unexpected end of file в /home/r/rinstroy/rin-stroy.ru/public_html/wp-content/themes/gifymo/functions.php на строке 1296
+
+2025-05-09T21:06:06+00:00 CRITICAL syntax error, unexpected '<' в /home/r/rinstroy/rin-stroy.ru/public_html/wp-content/themes/gifymo/functions.php на строке 1261
+
+2025-05-09T21:06:20+00:00 CRITICAL syntax error, unexpected '/' в /home/r/rinstroy/rin-stroy.ru/public_html/wp-content/themes/gifymo/functions.php на строке 1261
+
+2025-05-09T21:10:15+00:00 CRITICAL syntax error, unexpected '<', expecting end of file в /home/r/rinstroy/rin-stroy.ru/public_html/wp-content/themes/gifymo/functions.php на строке 1241
+

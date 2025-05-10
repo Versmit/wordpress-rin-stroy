@@ -1,0 +1,136 @@
+{
+    "elementor_cpt_support": [
+        "post",
+        "page",
+        "header",
+        "footer"
+    ],
+    "elementor_disable_color_schemes": "",
+    "elementor_disable_typography_schemes": "",
+    "elementor_default_generic_fonts": false,
+    "elementor_container_width": false,
+    "container_width": false,
+    "Layout Settings": false,
+    "elementor_space_between_widgets": false,
+    "elementor_stretched_section_container": false,
+    "elementor_page_title_selector": false,
+    "elementor_global_image_lightbox": false,
+    "elementor_css_print_method": "external",
+    "elementor_editor_break_lines": "",
+    "elementor_scheme_color": {
+        "1": "#be7374",
+        "2": "#fed2cc",
+        "3": "#788090",
+        "4": "#61ce70"
+    },
+    "elementor_scheme_typography": {
+        "1": {
+            "font_family": "Roboto",
+            "font_weight": "600"
+        },
+        "2": {
+            "font_family": "Roboto Slab",
+            "font_weight": "400"
+        },
+        "3": {
+            "font_family": "Roboto",
+            "font_weight": "400"
+        },
+        "4": {
+            "font_family": "Roboto",
+            "font_weight": "500"
+        }
+    },
+    "elementor_scheme_color-picker": {
+        "1": "#6ec1e4",
+        "2": "#54595f",
+        "3": "#7a7a7a",
+        "4": "#61ce70",
+        "5": "#4054b2",
+        "6": "#23a455",
+        "7": "#000",
+        "8": "#fff"
+    },
+    "elementor_active_kit_settings": {
+        "system_colors": [
+            {
+                "_id": "primary",
+                "title": "Primary",
+                "color": "#BE7374"
+            },
+            {
+                "_id": "secondary",
+                "title": "Secondary",
+                "color": "#000000"
+            },
+            {
+                "_id": "text",
+                "title": "Text",
+                "color": "#788090"
+            },
+            {
+                "_id": "accent",
+                "title": "Accent",
+                "color": "#FED2CC"
+            }
+        ],
+        "custom_colors": [
+            {
+                "_id": "21bd251",
+                "title": "New Item #1",
+                "color": "#8396A0"
+            }
+        ],
+        "system_typography": [
+            {
+                "_id": "primary",
+                "title": "Primary",
+                "typography_typography": "custom",
+                "typography_font_family": "Roboto",
+                "typography_font_weight": "600"
+            },
+            {
+                "_id": "secondary",
+                "title": "Secondary",
+                "typography_typography": "custom",
+                "typography_font_family": "Roboto Slab",
+                "typography_font_weight": "400"
+            },
+            {
+                "_id": "text",
+                "title": "Text",
+                "typography_typography": "custom",
+                "typography_font_family": "Roboto",
+                "typography_font_weight": "400"
+            },
+            {
+                "_id": "accent",
+                "title": "Accent",
+                "typography_typography": "custom",
+                "typography_font_family": "Roboto",
+                "typography_font_weight": "500"
+            }
+        ],
+        "custom_typography": [],
+        "default_generic_fonts": "Sans-serif",
+        "site_name": "Gifymo",
+        "site_description": "Gifts Shop WooCommerce Theme",
+        "container_width": {
+            "unit": "px",
+            "size": 1440,
+            "sizes": []
+        },
+        "space_between_widgets": {
+            "unit": "px",
+            "size": 0,
+            "sizes": []
+        },
+        "page_title_selector": "h1.entry-title",
+        "activeItemIndex": 1,
+        "viewport_md": 768,
+        "viewport_lg": 1025,
+        "stretched_section_container": "body",
+        "viewport_mobile": 767,
+        "viewport_tablet": 1024
+    }
+}

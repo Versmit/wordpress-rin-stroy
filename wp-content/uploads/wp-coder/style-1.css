@@ -1,0 +1,9 @@
+.product-video {
+    margin-top: 20px;
+}
+.product-video video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

@@ -1,0 +1,25 @@
+jQuery(function ($) {
+
+  /*  WooCommerce подаёт сигнал, когда галерея построена  */
+  $(document.body).on('wc_product_gallery_init', function () {
+
+      const $main      = $('.product-gallery .main-image img');
+      const $thumbWrap = $('.product-gallery .thumbnail-gallery');
+
+      if (!$main.length || !$thumbWrap.length) return;
+
+      $thumbWrap.on('click', 'img', function () {
+          const $img = $(this);
+
+          $main.attr({
+              src: $img.attr('src'),
+              alt: $img.attr('alt') || ''
+          });
+
+          $thumbWrap.find('img').removeClass('active-thumb');
+          $img.addClass('active-thumb');
+      });
+
+  }); // /on wc_product_gallery_init
+
+});

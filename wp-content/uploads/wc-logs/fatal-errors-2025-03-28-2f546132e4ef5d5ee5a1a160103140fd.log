@@ -1,0 +1,8 @@
+2025-03-28T09:40:21+00:00 CRITICAL Uncaught WpOrg\Requests\Exception\InvalidArgument: WpOrg\Requests\Transport\Curl::request(): Argument #3 ($data) must be of type array|string, boolean given in /home/c/cz60734/wordpress_ptm61/public_html/wp-includes/Requests/src/Exception/InvalidArgument.php:29
+Stack trace:
+#0 /home/c/cz60734/wordpress_ptm61/public_html/wp-includes/Requests/src/Transport/Curl.php(161): WpOrg\Requests\Exception\InvalidArgument::create(3, '$data', 'array|string', 'boolean')
+#1 /home/c/cz60734/wordpress_ptm61/public_html/wp-includes/Requests/src/Requests.php(469): WpOrg\Requests\Transport\Curl->request('https://smushpr...', Array, false, Array)
+#2 /home/c/cz60734/wordpress_ptm61/public_html/wp-includes/class-wp-http.php(410): WpOrg\Requests\Requests::request('https://smushpr...', Array, false, 'POST', Array)
+#3 /home/c/cz60734/wordpress_ptm61/public_html/wp-includes/class-wp-http.php(633): WP_Http->request('https://smushpr...', Array)
+#4 /home/c/cz60734/wordpress_ptm61/public_html/wp-includes/http.php(196): WP_Http->post('https: in /home/c/cz60734/wordpress_ptm61/public_html/wp-includes/Requests/src/Exception/InvalidArgument.php on line 29
+

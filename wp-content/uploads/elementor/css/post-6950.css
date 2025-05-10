@@ -1,0 +1,1258 @@
+.elementor-6950 .elementor-element.elementor-element-eaae50c{--display:grid;--e-con-grid-template-columns:repeat(1, 1fr);--e-con-grid-template-rows:repeat(1, 1fr);--gap:0px 0px;--grid-auto-flow:row;--background-transition:0.3s;}.elementor-6950 .elementor-element.elementor-element-168b4bb > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}@media(max-width:1024px){.elementor-6950 .elementor-element.elementor-element-eaae50c{--grid-auto-flow:row;}}@media(min-width:768px){.elementor-6950 .elementor-element.elementor-element-eaae50c{--content-width:1600px;}}@media(max-width:767px){.elementor-6950 .elementor-element.elementor-element-eaae50c{--e-con-grid-template-columns:repeat(1, 1fr);--grid-auto-flow:row;}}/* Start custom CSS for html, class: .elementor-element-168b4bb *//* Основные стили для всей страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Основной контейнер с максимальной шириной 1440px */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px;
+}
+/* Мобильная версия: уменьшение паддинга до 5px */
+@media (max-width: 768px) {
+    .container {
+        padding: 0px;
+    }
+}
+/* Плавная анимация появления и исчезновения текста при смене баннера */
+.banner-text-container h1, .banner-text-container p {
+    transition: opacity 0.5s ease-in-out; /* Переход прозрачности с анимацией */
+    opacity: 0; /* По умолчанию текст скрыт */
+}
+
+/* Когда текст активен, он становится полностью видимым */
+.banner-text-container.active h1, .banner-text-container.active p {
+    opacity: 1; /* Делает текст полностью видимым */
+}
+/* Верхняя плашка с изображением и текстом */
+.top-banner {
+    width: 100%; /* Плашка занимает всю ширину экрана */
+    height: 180px; /* Высота баннера */
+    background-color: #f1f1f1;
+    border-radius: 15px; /* Скругляем углы баннера */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Для позиционирования псевдоэлемента и текста поверх изображения */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6); /* Тень для баннера */
+    overflow: hidden; /* Скрываем лишние части изображения */
+    padding: 0; /* Убираем возможные padding */
+    box-sizing: border-box; /* Важно для учета padding в ширине */
+}
+
+/* Добавляем стили для контейнера изображений */
+.banner-container {
+    position: relative; /* Для позиционирования изображений друг над другом */
+    width: 100%;
+    height: 180px;
+    overflow: hidden; /* Скрываем лишние части изображений */
+}
+
+/* Изображения в карусели */
+.banner-image {
+    position: absolute; /* Все изображения накладываются друг на друга */
+    width: 100%; /* Изображение занимает всю ширину баннера */
+    height: 180px; /* Высота изображения совпадает с высотой баннера */
+    top: 0;
+    left: 0;
+    border-radius: 15px; /* Скругленные углы для изображения */
+    opacity: 0; /* Скрытые изображения */
+    transition: opacity 1s ease-in-out;
+    padding: 0; /* Убираем возможные padding */
+    box-sizing: border-box; /* Учет padding в ширине */
+}
+
+.banner-image.active {
+    opacity: 1; /* Показываем активное изображение */
+}
+
+/* Псевдоэлемент */
+.top-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Псевдоэлемент занимает всю ширину плашки */
+    height: 180px; /* Высота псевдоэлемента совпадает с высотой баннера */
+    background: rgba(0, 0, 0, 0.4); /* Полупрозрачный слой */
+    z-index: 3; /* Псевдоэлемент ниже текста */
+    border-radius: 15px; /* Скругленные углы совпадают с углами баннера */
+    padding: 0; /* Убираем padding, если есть */
+    box-sizing: border-box; /* Учет padding в ширине */
+}
+
+/* Изображение баннера */
+.top-banner img {
+    max-width: 100%;
+    height: 180px;
+    border-radius: 15px; /* Скругляем углы для изображений */
+}
+
+/* Контейнер для текста */
+.banner-text-container {
+    position: absolute;
+    top: 55%; /* Центрирование текста по вертикали */
+    left: 50%; /* Центрирование текста по горизонтали */
+    transform: translate(-50%, -50%); /* Коррекция смещения для точного центрирования */
+    text-align: center;
+    color: white;
+    z-index: 4;
+}
+
+/* Большой заголовок */
+.banner-text-2 {
+    font-size: 80px; /* Крупный шрифт для заголовка */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0; /* Убираем отступы */
+    white-space: nowrap; /* Предотвращение переноса текста */
+    color: white;
+    z-index: 4;
+}
+
+/* Маленький текст под заголовком */
+.banner-text-1 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    white-space: nowrap;
+    word-break: normal;
+    max-width: none;
+    margin: 0;
+    z-index: 4;
+}
+
+@media (max-width: 768px) {
+    .banner-text-1 {
+        font-size: 12px;
+        white-space: normal;
+        word-break: break-word;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Стили для секции заголовка */
+.header-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; /* Скругляем углы для изображений в секции заголовка */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+}
+
+.header-section h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.header-section p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Стили для карусели с категориями */
+.category-carousel-wrapper {
+    position: relative;
+    margin: 20px -20px;
+    padding: 0px 0;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Контейнер для карусели */
+.carousel-container {
+    overflow-x: auto; /* Разрешаем горизонтальную прокрутку */
+    overflow-y: hidden; /* Скрываем вертикальную прокрутку */
+    width: 100%; /* Контейнер занимает всю ширину родительского элемента */
+    -webkit-overflow-scrolling: touch; /* Плавная прокрутка на iOS */
+    scrollbar-width: none; /* Скрываем полосу прокрутки в Firefox */
+}
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+/* Карусель */
+.category-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Убираем transition, если он мешает прокрутке */
+    /* transition: transform 0.5s ease-in-out; */
+    padding: 15px;
+    margin: 0;
+    scroll-snap-type: x mandatory; /* Обеспечиваем привязку к элементам при прокрутке */
+}
+
+/* Элементы карусели */
+.carousel-item {
+    flex: 0 0 auto; /* Элементы не растягиваются и не сжимаются */
+    width: calc(100% / 6 - 10px); /* Ширина элемента */
+    text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    margin: 0 5px;
+    height: 200px;
+    scroll-snap-align: start; /* Привязка элемента при прокрутке */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 130px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.carousel-item p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Кнопки для управления каруселью */
+.carousel-btn {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn.left {
+    left: 10px;
+}
+
+.carousel-btn.right {
+    right: 10px;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    /* Адаптация верхней плашки для мобильных устройств */
+    .top-banner {
+        height: 180px;
+        margin-bottom: 15px;
+    }
+
+    .banner-text-2 {
+        font-size: 40px;
+    }
+
+    .banner-text-1 {
+        font-size: 12px;
+        white-space: normal;
+        word-break: break-word;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Адаптация карусели категорий для мобильных устройств */
+    .category-carousel-wrapper {
+        margin: 15px -15px;
+        padding: 5px 0;
+    }
+
+    .carousel-item {
+        flex: 0 0 calc(100% / 2 - 15px); /* Изменяем ширину элементов для мобильных устройств */
+        margin: 10px;
+        height: 245px;
+    }
+    .category-link {
+        font-size: 17px !important; /* Увеличиваем размер текста и используем !important для повышения приоритета */
+    }
+    .carousel-item img {
+        width: 100%;
+        height: 170px;
+        object-fit: contain;
+        max-height: 170px; /* Увеличенная высота для изображений на мобильной версии */
+    }
+        .carousel-container {
+        scrollbar-width: none; /* Скрываем полосу прокрутки в Firefox */
+    }
+        .carousel-container::-webkit-scrollbar {
+        display: none; /* Скрываем полосу прокрутки в WebKit-браузерах */
+    }
+
+    .info-card i {
+        font-size: 30px; /* Уменьшим иконку для лучшего соответствия мобильной версии */
+        margin-bottom: 10px; /* Отступ под иконкой */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Дополнительная адаптация для мобильных устройств */
+    .carousel-item {
+        flex: 0 0 calc(90% - 10px);
+        margin: 5px;
+    }
+
+    .info-section h2 {
+        font-size: 20px; /* Увеличим размер заголовка для лучшей читаемости на маленьких экранах */
+    }
+
+    .business-header-text {
+        font-size: 22px; /* Увеличим размер текста для заголовка */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Адаптация галереи для мобильных устройств */
+    .gallery img {
+        width: 150px;
+        height: 100px;
+        margin-right: 15px;
+    }
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Стили для информационного блока */
+.info-section {
+    text-align: left;
+    margin-bottom: 20px; /* Отступ внизу для отделения от других блоков */
+    font-weight: bold;
+}
+
+.info-section h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.fa-solid {
+    font-size: 41px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    margin-left: 0; /* Убираем левый отступ */
+    display: inline-block; /* Делаем иконку блочным элементом, чтобы она могла корректно выравниваться */
+    text-align: left; /* Выровняем иконку по левому краю */
+}
+
+.info-card i {
+    display: block;
+    text-align: left; /* Принудительное выравнивание иконок по левому краю */
+}
+
+/* Обновленные стили для карточек */
+.info-cards-carousel {
+    display: flex;
+    flex-wrap: nowrap; /* Не позволяем карточкам переноситься на новую строку */
+    overflow-x: auto; /* Добавляем горизонтальную прокрутку */
+    scroll-behavior: smooth;
+    gap: 5px; /* Промежуток между карточками */
+    padding: 0px;
+    scrollbar-width: none; /* Убираем полосу прокрутки в Firefox */
+    -ms-overflow-style: none;  /* Убираем полосу прокрутки в IE и Edge */
+}
+
+.info-cards-carousel::-webkit-scrollbar {
+    display: none; /* Убираем полосу прокрутки в Chrome, Safari и Opera */
+}
+
+.info-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    height: auto;
+    flex: 0 0 auto; /* Карточки не сжимаются и не растягиваются */
+    flex-shrink: 0; /* Предотвращаем сжатие карточек */
+    min-width: 200px; /* Устанавливаем минимальную ширину карточки */
+    max-width: 230px; /* Ограничиваем максимальную ширину карточек */
+    margin: 7px; /* Добавлены отступы между карточками */
+    box-sizing: border-box;
+}
+
+.info-card p, .info-card a, .info-card i {
+    text-align: left; /* Убедимся, что все элементы внутри карточки выровнены по левому краю */
+}
+
+/* Четвертая карточка будет иметь особый стиль */
+.info-card:nth-child(4) {
+    background-color: #333; /* Специальный стиль для четвертой карточки */
+    color: #fff;
+    flex-grow: 1.2; /* Уменьшаем ширину карточки, чтобы она не была слишком широкой */
+    max-width: 60%; /* Ограничиваем максимальную ширину, чтобы кнопки не растягивались */
+}
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+    .info-cards-carousel .info-card:nth-child(4) {
+        flex: 0 0 auto !important;
+        width: 160%;
+        min-width: unset;
+        max-width: unset;
+    }
+}
+
+.info-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+/* Текст внутри карточек */
+.business-header-text-1 {
+    font-size: 14px;
+    color: #515151;
+    margin-bottom: 10px;
+}
+
+.info-card a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    padding: 15px 0;
+    display: block; /* Заменяем inline-block на block, чтобы ссылка занимала всю ширину */
+    text-align: left; /* Выровнять текст по левому краю */
+    margin: 0; /* Убираем возможные отступы, которые могли центрировать ссылку */
+}
+
+/* Стили для блока бизнес-опций */
+.business-options {
+    display: grid;
+    grid-template-columns: repeat(2, max-content); /* Две колонки для кнопок */
+    grid-gap: 10px; /* Промежуток между кнопками */
+    justify-content: flex-start; /* Выровнять по левому краю */
+}
+
+.business-options a {
+    justify-self: start; /* Кнопки выровнены по левому краю */
+    font-size: 14px;
+    color: #333; /* Цвет текста */
+    background-color: #fff; /* Цвет фона кнопок */
+    text-decoration: none;
+    padding: 5px 15px; /* Внутренние отступы для кнопок */
+    border-radius: 15px; /* Скругленные углы кнопок */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень для кнопок */
+    white-space: nowrap; /* Предотвращение переноса текста внутри кнопки */
+}
+
+/* Стили для заголовка "Покупайте как юрлицо" */
+.business-header-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* Цвет текста */
+    text-align: left; /* Выравнивание текста по левому краю */
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Новый блок заголовка и кнопки */
+.original-products .header {
+    display: flex;
+    justify-content: flex-start; /* Выровнять элементы по левому краю */
+    align-items: center;
+    margin: 15px 5;
+    margin-left: 15px;
+}
+
+.original-products .header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 25px; /* Уменьшенный отступ между заголовком и кнопкой */
+}
+
+.original-products .header .btn {
+    padding: 5px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 35px;
+    font-size: 14px; /* Размер текста */
+    font-weight: bold; /* Жирность текста */
+    text-transform: uppercase; /* Преобразование текста в верхний регистр */
+    display: inline-block; /* Выравнивание кнопки как inline-блока */
+    transition: background-color 0.3s ease; /* Эффект при наведении */
+}
+
+.original-products .header .btn:hover {
+    background-color: #555; /* Цвет кнопки при наведении */
+}
+
+/* Обертка для галереи */
+.gallery-container {
+    width: 100%; /* Ширина контейнера */
+    max-width: 1000px; /* Ограничиваем максимальную ширину контейнера */
+    height: 130px; /* Фиксированная высота контейнера */
+    overflow: hidden; /* Скрываем все, что выходит за пределы контейнера */
+    position: relative;
+    display: block;
+}
+
+/* Обертка для галереи */
+.gallery-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Галерея */
+.gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    width: max-content;
+    /* Уберите transition для transform */
+    /* transition: transform 0.5s ease-in-out; */
+}
+
+/* Стиль для изображений */
+.gallery img {
+    width: 200px;
+    height: 130px;
+    object-fit: contain;
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+/* Стили для блока info-card-unique с затемнением */
+#info-card-unique {
+    position: relative; /* Устанавливаем относительное позиционирование для родителя */
+    background-image: url('https://rin-stroy.ru/wp-content/uploads/2024/10/0_3.png'); /* Путь к вашему изображению */
+    background-size: cover; /* Изображение покрывает весь блок, сохраняя пропорции */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Изображение не повторяется */
+    border-radius: 10px; /* Скругленные углы для блока */
+    overflow: hidden; /* Скрываем всё, что выходит за границы блока */
+    padding: 20px; /* Отступы для контента */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Лёгкая тень для блока */
+    text-align: center; /* Центрируем текст */
+}
+
+/* Добавляем затемнение через псевдоэлемент */
+#info-card-unique::before {
+    content: ''; /* Псевдоэлемент не требует текстового содержимого */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Полупрозрачный черный фон для затемнения, можно настроить интенсивность */
+    border-radius: 10px; /* Скругленные углы, чтобы соответствовать основному блоку */
+    z-index: 1; /* Устанавливаем выше фона, но ниже текста */
+}
+
+/* Стили для текста и кнопок поверх изображения */
+#info-card-unique .business-header-text,
+#info-card-unique .business-options a {
+    position: relative;
+    z-index: 2; /* Текст и кнопки должны быть поверх затемнения */
+    color: #00; /* Белый цвет текста для контраста с фоном */
+}
+.site-header,
+.site-footer {
+    position: relative;
+    z-index: 1; /* Значение по умолчанию */
+    overflow: visible;
+}
+@media (max-width: 768px) {
+    .site-footer {
+        position: relative;
+        z-index: 0;
+        overflow: visible;
+    }
+    .site-header { 
+        position: relative;
+        z-index: 10;
+        overflow: visible;
+ }
+}/* End custom CSS */
+/* Start custom CSS for html, class: .elementor-element-79549f2 *//* Контейнер для информации о продукте */
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Выравниваем элементы по началу */
+    height: 150px;               /* Увеличиваем высоту контейнера */
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.product-block {
+    position: relative; /* Для абсолютного позиционирования .product-dots внутри карточки */
+    width: 220px;
+    height: 390px; /* Обновленная высота карточки */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    text-align: left;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.product-block:last-child {
+    margin-right: 0;
+}
+
+.product-gallery {
+    flex: 0 0 220px; /* Фиксированная высота */
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 220px;
+    overflow: hidden;
+    width: 660px; /* Ширина для 3 изображений по 220px каждое */
+}
+
+.product-image {
+    width: 220px; /* Каждое изображение занимает 220px */
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+/* Корректировка позиционирования рейтинга */
+.product-rating {
+    display: flex;
+    gap: 5px;
+    margin-top: 0; /* Убираем лишние отступы */
+    margin-bottom: 5px; /* Добавляем небольшой отступ снизу */
+    align-items: center; /* Выравниваем звезды по центру вертикально */
+}
+
+.product-rating .star {
+    font-size: 16px; /* Размер шрифта увеличен до 16px */
+    color: #cccccc; /* Серый цвет для пустых звезд */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.product-rating .star.filled {
+    color: #ffc107; /* Цвет для заполненных звезд */
+}
+
+.product-rating .star:hover {
+    color: #ffc107;
+    transform: scale(1.2);
+}
+
+/* Сохранение точек на прежнем месте */
+.product-dots {
+    position: absolute;
+    bottom: 10px; /* Отступ снизу */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+    padding: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.product-dots .dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.product-dots .dot.active {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Обновленный контейнер для информации о продукте */
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Равномерно распределяем пространство между элементами */
+    height: 130px; /* Фиксированная высота для `.product-info` */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Стиль для названий товаров */
+.category-link {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    line-height: 1.3;
+    height: calc(1.3em * 2);      /* Фиксированная высота для двух строк */
+    overflow: visible;
+    text-overflow: ellipsis;
+    white-space: normal;
+    margin-top: 5px;              /* Добавляем небольшой отступ сверху */
+}
+
+.category-link:hover {
+    color: #3256CC; /* Изменение цвета на синий при наведении */
+    /* transform: scale(1.05); */ /* Убираем увеличение размера при наведении */
+}
+
+/* Стиль для цены */
+.product-info span {
+    margin-top: 0px;             /* Увеличиваем отступ сверху, чтобы опустить цену ниже */
+    font-size: 14px;
+    font-weight: bold;
+    color: #e74c3c;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.product-info span.price:hover {
+    color: #c0392b; /* Изменение цвета при наведении (опционально) */
+}
+
+/* Стили для промо-баннера */
+.promo-banner {
+    width: calc(100% - 0px);
+    height: 180px;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+.promo-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 3;
+    border-radius: 15px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.promo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Используем cover для заполнения всего контейнера, сохраняя пропорции */
+    object-position: center; /* Центрирование изображения в контейнере */
+    border-radius: 0; /* Убираем радиус, чтобы полностью заполнить контейнер */
+}
+
+.promo-text-container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 4;
+}
+
+.promo-text-2 {
+    font-size: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    white-space: nowrap;
+    color: white;
+    z-index: 4;
+}
+
+.promo-text-1 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    white-space: nowrap;
+    z-index: 4;
+}
+
+/* Мобильная версия для промо-баннера */
+@media (max-width: 768px) {
+    .promo-banner {
+        width: calc(100% - 0px);
+        height: 150px; /* Высота совпадает с верхним баннером для единообразия */
+        margin: 15px auto;
+        align-items: stretch;
+    }
+
+    .promo-banner::before {
+        height: 100%; /* Убедитесь, что псевдоэлемент также адаптируется */
+    }
+
+    .promo-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Изменено с fill на cover */
+        object-position: center;
+        display: block; /* Добавлено для устранения возможных отступов */
+        border-radius: 0;
+    }
+
+    .promo-text-2 {
+        font-size: 28px;
+    }
+
+    .promo-text-1 {
+        font-size: 13px;
+        white-space: normal;
+        word-break: break-word;
+        max-width: 100%;
+        margin: 10px auto;
+    }
+}
+
+/* Дополнительная адаптация для очень маленьких экранов */
+@media (max-width: 480px) {
+    .promo-banner {
+        width: calc(100% - 0px);
+        height: 150px; /* Высота совпадает с верхним баннером для единообразия */
+        margin: 15px auto;
+        align-items: stretch;
+    }
+
+    .promo-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Изменено с fill на cover */
+        object-position: center;
+        display: block; /* Добавлено для устранения возможных отступов */
+        border-radius: 0;
+    }
+
+    .promo-text-2 {
+        font-size: 24px;
+    }
+
+    .promo-text-1 {
+        font-size: 13px;
+        margin: 10px auto;
+    }
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет карточкам переходить на новую строку */
+    justify-content: space-between;
+    padding: 0px;
+}
+
+/* Стили для заголовка и кнопки */
+.products-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px;
+}
+
+.products-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.products-header .btn {
+    padding: 5px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.products-header .btn:hover {
+    background-color: #555;
+}
+
+/* Стили для контейнера товаров */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 0px; /* Убираем верхний и нижний отступы */
+}
+@media (max-width: 768px) {
+    .products-container {
+        display: flex;
+        flex-wrap: nowrap; /* Отключаем перенос элементов */
+        overflow-x: auto; /* Включаем горизонтальную прокрутку */
+        scroll-snap-type: x mandatory; /* Привязка прокрутки к элементам */
+        -webkit-overflow-scrolling: touch; /* Плавный скролл на iOS */
+        padding: 0 10px; /* Отступы по бокам, если необходимо */
+        margin: 20px 0; /* Отступы сверху и снизу */
+        scrollbar-width: none; /* Скрыть полосу прокрутки в Firefox */
+    }
+
+    .products-container::-webkit-scrollbar {
+        display: none; /* Скрыть полосу прокрутки в WebKit браузерах */
+    }
+}
+@media (max-width: 768px) {
+    .product-block {
+        flex: 0 0 auto; /* Элемент не растягивается и не сжимается */
+        scroll-snap-align: start; /* Привязка элемента при скролле */
+        width: 220px; /* Фиксированная ширина карточки */
+        margin-right: 15px; /* Отступ между карточками */
+    }
+
+    .product-block:last-child {
+        margin-right: 0; /* Убираем отступ у последней карточки */
+    }
+}
+/* Мобильная версия */
+@media (max-width: 768px) {
+    .promo-banner {
+        width: 100%;
+        height: 150px;
+        margin: 15px 0;
+        align-items: stretch;
+    }
+
+    .promo-banner::before {
+        height: 100%;
+    }
+
+    .promo-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        border-radius: 0;
+    }
+
+    .promo-text-2 {
+        font-size: 28px;
+    }
+
+    .promo-text-1 {
+        font-size: 13px;
+        white-space: normal;
+        word-break: break-word;
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    /* Увеличиваем высоту названия товара до трех строк */
+    .category-link {
+        height: calc(1.3em * 3); /* Три строки */
+    }
+
+    /* Увеличиваем высоту контейнера информации о продукте */
+    .product-info {
+        height: 150px; /* Было 130px */
+        
+    }
+
+    /* Сдвигаем цену ниже */
+    .product-info span {
+        margin-top: 5px; /* Добавляем отступ сверху */
+    }
+
+    /* Сдвигаем точки вниз */
+    .product-dots {
+        bottom: 15px; /* Было 10px */
+    }
+
+    /* Увеличиваем высоту карточки товара */
+    .product-block {
+        height: 410px; /* Было 390px */
+    }
+
+    /* Стили для контейнера товаров в мобильной версии */
+    .products-container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 0 10px;
+        margin: 20px 0;
+        scrollbar-width: none;
+    }
+
+    .products-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .product-block {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        width: 220px;
+        margin-right: 15px;
+        height: auto; /* Высота адаптируется к содержимому */
+        margin-bottom: 25px; /* Добавляем нижний отступ */
+    }
+
+    .product-block:last-child {
+        margin-right: 10px;
+        margin-bottom: 25px; /* Было 20px, увеличили до 25px */
+    }
+        .product-rating {
+        margin-top: auto; /* Сдвигаем звезды вниз */
+    }
+}
+.product-block {
+    position: relative; /* Для позиционирования дочерних элементов */
+    transition: transform 0.3s ease-in-out; /* Плавная анимация для карточки товара */
+}
+
+.product-block:hover {
+    transform: scale(1.02); /* Легкое увеличение карточки при наведении (опционально) */
+}
+
+/* Стили для панели действий (group-action) */
+.group-action {
+    position: absolute;
+    bottom: 140px; /* Плашка будет находиться внизу карточки товара */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px; /* Расстояние между иконками */
+    opacity: 0; /* По умолчанию скрыто */
+    transition: opacity 0.3s ease-in-out; /* Плавное появление */
+    z-index: 5; /* Чтобы кнопки находились выше контента карточки */
+}
+
+.product-block:hover .group-action {
+    opacity: 1; /* Показываем иконки при наведении на карточку товара */
+}
+
+/* Делаем кнопки компактными и не ломаем их стиль */
+.group-action .button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.group-action .button::before,
+.group-action .button::after {
+    content: none; /* Отключаем все псевдоэлементы, чтобы избежать дублирования иконок */
+}
+
+.group-action .button:hover {
+    background-color: #f0f0f0; /* Слегка меняем цвет фона при наведении */
+    transform: scale(1.1); /* Легкое увеличение кнопки при наведении */
+}
+
+.group-action .button i {
+    font-size: 16px; /* Размер иконок немного увеличен для лучшего восприятия */
+    color: #333; /* Цвет иконок */
+    font-family: 'Font Awesome 5 Free' !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+}
+/* Скрываем лишние текстовые надписи, добавляемые WooCommerce */
+.group-action .add_to_cart_button::before,
+.group-action .add_to_cart_button::after,
+.group-action .button::before,
+.group-action .button::after {
+    content: none !important; /* Убираем ненужные текстовые элементы */
+}
+    /* Стили для новой карусели */
+    /* Стили для новой карусели */
+    .promo-carousel-new {
+        display: flex;
+        justify-content: space-between; /* Равномерно распределяем элементы по ширине */
+        gap: 15px; /* Отступ между карточками */
+        padding: 20px 0; /* Отступы сверху и снизу */
+    }
+
+    .carousel-item-new {
+        flex: 1; /* Растягиваем элементы на всю ширину контейнера */
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        height: 300px; /* Увеличенная высота карточки для лучшего отображения */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень */
+    }
+
+    .carousel-item-new img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Картинка полностью заполняет контейнер, сохраняя пропорции, но может обрезаться */
+    }
+.group-action .added_to_cart {
+    display: none !important;
+}
+
+.group-action .ajax_add_to_cart.added::after {
+    content: '' !important;
+}
+
+.group-action .ajax_add_to_cart.added {
+    width: 50px; /* Adjust width as needed */
+}
+
+.group-action .ajax_add_to_cart i {
+    display: inline-block;
+}
+/* Ensure the Add to Cart button maintains its shape after being clicked */
+.group-action .button.ajax_add_to_cart {
+    border-radius: 50%; /* Set to your desired value */
+    padding: 10px;    /* Adjust padding as needed */
+    width: auto;      /* Ensure width is appropriate */
+    transition: none; /* Disable any transitions */
+}
+
+/* Override styles when the button has the 'added' class */
+.group-action .button.ajax_add_to_cart.added {
+    border-radius: 50% !important;
+    padding: 10px !important;
+    width: auto !important;
+    background-color: initial !important; /* Retain original background */
+}
+/* Общие стили для всех кнопок в карточке товара */
+.group-action .button, .group-action .woosw-btn, .group-action .woosc-btn {
+    width: 35px; /* Устанавливаем одинаковую ширину */
+    height: 35px; /* Устанавливаем одинаковую высоту */
+    border-radius: 50%; /* Скругляем кнопки */
+    background-color: #fff; /* Белый фон */
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Тень */
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Иконки внутри кнопок */
+.group-action .button i, .group-action .woosw-btn i, .group-action .woosc-btn i {
+    font-size: 16px; /* Размер иконки */
+    color: #333; /* Цвет иконки */
+}
+
+/* Убираем текст Compare/Wishlist, оставляем только иконки */
+.group-action .woosc-btn::after, .group-action .woosw-btn::after {
+    content: none !important; /* Убираем текст после иконки */
+}
+
+/* Ховер эффект для всех кнопок */
+.group-action .button:hover, .group-action .woosw-btn:hover, .group-action .woosc-btn:hover {
+    background-color: #f0f0f0; /* Меняем цвет при наведении */
+    transform: scale(1.1); /* Легкое увеличение при наведении */
+}
+
+/* Стили для мобильной версии карусели */
+@media (max-width: 768px) {
+    .promo-carousel-new {
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        gap: 10px;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .carousel-item-new {
+        flex: 0 0 80%;
+        scroll-snap-align: start;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .carousel-item-new img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+}
+
+/* Дополнительные стили для улучшения пользовательского опыта на мобильных устройствах */
+.promo-carousel-new::-webkit-scrollbar {
+    display: none; /* Скрываем полосу прокрутки */
+}
+
+.promo-carousel-new {
+    -ms-overflow-style: none;  /* Скрываем полосу прокрутки в IE и Edge */
+    scrollbar-width: none;  /* Скрываем полосу прокрутки в Firefox */
+} 
+    .popup {
+        display: none;
+        position: fixed;
+        z-index: 100000000; /* Значительно увеличен для предотвращения отображения элементов поверх поп-апа */
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.9); /* Увеличена непрозрачность для затемнения */
+    }
+    .popup-content {
+        position: fixed;
+        top: 60px; /* Отступ от верхнего меню */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        padding: 20px;
+        width: 95%;
+        max-width: 600px;
+        height: auto;
+        max-height: calc(100% - 120px); /* Отступы сверху и снизу */
+        overflow: auto;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    }
+    .popup-content img {
+        width: 100%;
+        height: auto;
+    }
+    .popup-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        color: #fff;
+    }
+    @media (max-width: 768px) {
+        .popup-content {
+            top: 150px; /* Увеличен отступ для мобильной версии */
+            width: 90%;
+            height: auto;
+            padding: 10px;
+        }
+    }/* End custom CSS */

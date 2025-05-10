@@ -1,0 +1,18 @@
+
+---Downloaded files---
+The import files for: Home 1 were successfully downloaded!
+Initial max execution time = 800
+Files info:
+Site URL = https://ce77211-wordpress-ptm61.tw1.ru
+Data file = /home/c/ce77211/wordpress_ptm61/public_html/wp-content/plugins/gifymo-core/dummy-data/content.xml
+Widget file = not defined!
+Customizer file = not defined!
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+---ocdi/after_import---
+

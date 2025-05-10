@@ -1,0 +1,4 @@
+2025-03-19T14:52:38+00:00 CRITICAL Cannot redeclare custom_translate_woocommerce_texts() (previously declared in /home/c/cz60734/wordpress_ptm61/public_html/wp-content/themes/gifymo/functions.php:604) в /home/c/cz60734/wordpress_ptm61/public_html/wp-content/themes/gifymo/functions.php на строке 803
+
+2025-03-19T14:52:47+00:00 CRITICAL Cannot redeclare custom_translate_woocommerce_texts() (previously declared in /home/c/cz60734/wordpress_ptm61/public_html/wp-content/themes/gifymo/functions.php:604) в /home/c/cz60734/wordpress_ptm61/public_html/wp-content/themes/gifymo/functions.php на строке 803
+

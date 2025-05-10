@@ -1,0 +1,31 @@
+# START YOAST BLOCK
+# ---------------------------
+User-agent: *
+Disallow: *?*
+Disallow: /wp-admin/
+Disallow: /readme.html
+Disallow: /*?
+Disallow: /?s=
+Disallow: /uncategorized/
+Disallow: /wp-json/
+Disallow: /checkout/
+Disallow: /faq/
+Disallow: /my-account/
+Disallow: /track-orders/
+Disallow: /communications/
+Disallow: /influencers/
+Disallow: /marketing/
+Disallow: /media/
+Disallow: /pr/
+Disallow: /top-lists/
+Disallow: /без-рубрики/
+Disallow: /communications/
+Disallow: /главная-copy/ 
+Disallow: /видео-блог/
+Disallow: /my-wishlist/
+Disallow: /страница-сравнения-товаров/
+
+
+Sitemap: https://rin-stroy.ru/sitemap_index.xml
+# ---------------------------
+# END YOAST BLOCK

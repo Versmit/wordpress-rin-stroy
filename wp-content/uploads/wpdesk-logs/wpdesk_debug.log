@@ -1,0 +1,2 @@
+[2024-02-10T17:34:46.398983+00:00] wpdesk.DEBUG: Sender payload: {"click_action":"no","url":"https:\/\/ce77211-wordpress-ptm61.tw1.ru","localhost":"yes"} {"source":"wpdesk-sender"} []
+[2024-02-10T17:34:51.918459+00:00] wpdesk.DEBUG: Sender response: {"headers":[],"body":"","response":{"code":false,"message":false},"cookies":[],"http_response":null} {"source":"wpdesk-sender"} []

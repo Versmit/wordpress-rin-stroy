@@ -1,0 +1,9 @@
+2025-04-29T12:07:47+00:00 CRITICAL Uncaught Error: Call to a member function get_filesize() on null in /home/r/rinstroy/rin-stroy.ru/public_html/wp-content/plugins/wp-smushit/core/media/class-media-item.php:1147
+Stack trace:
+#0 /home/r/rinstroy/rin-stroy.ru/public_html/wp-content/plugins/wp-smushit/core/modules/class-smush.php(1664): Smush\Core\Media\Media_Item->is_large()
+#1 /home/r/rinstroy/rin-stroy.ru/public_html/wp-content/plugins/wp-smushit/core/modules/async/class-async.php(105): Smush\Core\Modules\Smush->should_auto_smush(10402)
+#2 /home/r/rinstroy/rin-stroy.ru/public_html/wp-content/plugins/wp-smushit/core/modules/async/class-abstract-async.php(124): Smush\Core\Modules\Async\Async->should_run(Array)
+#3 /home/r/rinstroy/rin-stroy.ru/public_html/wp-includes/class-wp-hook.php(326): Smush\Core\Modules\Async\Abstract_Async->launch(Array, 10402)
+#4 /home/r/rinstroy/rin-stroy.ru/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#5 /home/r/rinstroy/rin-stroy.ru/public_html/wp-admin/includes/image.php(750): apply_fi in /home/r/rinstroy/rin-stroy.ru/public_html/wp-content/plugins/wp-smushit/core/media/class-media-item.php on line 1147
+

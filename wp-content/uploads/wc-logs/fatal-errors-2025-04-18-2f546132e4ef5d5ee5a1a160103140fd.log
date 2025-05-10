@@ -1,0 +1,8 @@
+2025-04-18T00:26:04+00:00 CRITICAL syntax error, unexpected '<', expecting end of file в /home/r/rinstroy/rin-stroy.ru/public_html/wp-content/themes/gifymo/functions.php на строке 1001
+
+2025-04-18T00:26:07+00:00 CRITICAL syntax error, unexpected '<', expecting end of file в /home/r/rinstroy/rin-stroy.ru/public_html/wp-content/themes/gifymo/functions.php на строке 1001
+
+2025-04-18T00:26:35+00:00 CRITICAL Cannot redeclare my_add_vendorinfo_metabox() (previously declared in /home/r/rinstroy/rin-stroy.ru/public_html/wp-content/themes/gifymo/functions.php:992) в /home/r/rinstroy/rin-stroy.ru/public_html/wp-content/themes/gifymo/functions.php на строке 1022
+
+2025-04-18T00:35:50+00:00 CRITICAL syntax error, unexpected '<', expecting end of file в /home/r/rinstroy/rin-stroy.ru/public_html/wp-content/themes/gifymo/functions.php на строке 834
+
