@@ -1,0 +1,10 @@
+# Исключаем тяжёлые файлы и чувствительные данные
+wp-content/uploads/
+wp-content/ai1wm-backups/
+wp-config.php
+*.wpress
+*.zip
+*.tar.gz
+*.sql
+*.log
+node_modules/
