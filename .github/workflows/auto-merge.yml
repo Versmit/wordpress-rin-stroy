@@ -19,5 +19,5 @@ jobs:
         run: |
           git fetch origin
           git checkout main
-          git merge --ff-only origin/work
+          git merge origin/work --allow-unrelated-histories -m "Auto merge work into main"
           git push origin main
