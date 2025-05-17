@@ -1007,3 +1007,30 @@
 .gips-container h3 {
   text-align: center;
 }
+
+/*
+=================================
+ 11) МОБИЛЬНОЕ РАСПОЛОЖЕНИЕ
+================================= */
+@media (max-width: 576px) {
+  /* Перестраиваем сетку в один столбец */
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+  .boxA { grid-column: 1; grid-row: 1; }
+  .boxB { grid-column: 1; grid-row: 2; }
+  .boxC { grid-column: 1; grid-row: 3; }
+  .boxD { grid-column: 1; grid-row: 4; }
+  .boxE { grid-column: 1; grid-row: 5; }
+
+  /* Блок покупки складываем вертикально */
+  .rin-cart-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .rin-cart-row .add-to-cart {
+    width: 100%;
+    justify-content: center;
+  }
+}
