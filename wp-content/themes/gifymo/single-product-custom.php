@@ -220,7 +220,7 @@ if ( $video_link && $image_id ) {
 
     <!-- (3) Блок "Больше товаров" -->
     <section class="more-items boxD">
-      <h2>Больше товаров из этой категории</h2>
+      <h2>Больше товаров из категории</h2>
       <?php
       if ( !empty($related_cat_slug) ) {
         $args = [
