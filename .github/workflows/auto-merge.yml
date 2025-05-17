@@ -23,5 +23,5 @@ jobs:
           git merge --ff-only origin/work
           git push origin main
  
-EOF
-)
+
+
