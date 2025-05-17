@@ -24,7 +24,7 @@ Disallow: /главная-copy/
 Disallow: /видео-блог/
 Disallow: /my-wishlist/
 Disallow: /страница-сравнения-товаров/
-
+Disallow: /страница-сравнения/
 
 Sitemap: https://rin-stroy.ru/sitemap_index.xml
 # ---------------------------
