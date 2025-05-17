@@ -1,0 +1,30 @@
+name: Codex Auto Update
+
+on:
+  workflow_dispatch:  # Запускать вручную через интерфейс GitHub
+
+jobs:
+  auto-update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - run: pip install openai
+
+      - name: Generate code with Codex
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python codex_generate.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Автоматическое обновление от Codex" || echo "Нет изменений"
+          git push origin main
